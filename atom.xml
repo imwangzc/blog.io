@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>王智超的博客</title>
+  <title>Leon Blog</title>
   
   <subtitle>温柔、人性 better than  冷酷、金钱</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -8,6 +8,11 @@
   <link href="http://yoursite.com/"/>
   <updated>2018-10-19T13:13:46.414Z</updated>
   <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Leon Blog</name>
+    
+  </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
