@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="title: 测试python闭包函数date: 2018-10-23 11:27:22tags:Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。闭包的概念我们尝试从概念上去理解一下闭包。在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间">
+<meta name="description" content="Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。闭包的概念我们尝试从概念上去理解一下闭包。在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。用比较容易懂的人话说，就">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leon Blog">
+<meta property="og:title" content="python闭包和作用域">
 <meta property="og:url" content="http://yoursite.com/2018/10/23/python中的闭包和作用域/index.html">
 <meta property="og:site_name" content="Leon Blog">
-<meta property="og:description" content="title: 测试python闭包函数date: 2018-10-23 11:27:22tags:Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。闭包的概念我们尝试从概念上去理解一下闭包。在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间">
+<meta property="og:description" content="Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。闭包的概念我们尝试从概念上去理解一下闭包。在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。用比较容易懂的人话说，就">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-15T09:49:58.857Z">
+<meta property="og:updated_time" content="2019-07-15T09:59:47.630Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leon Blog">
-<meta name="twitter:description" content="title: 测试python闭包函数date: 2018-10-23 11:27:22tags:Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。闭包的概念我们尝试从概念上去理解一下闭包。在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间">
+<meta name="twitter:title" content="python闭包和作用域">
+<meta name="twitter:description" content="Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。闭包的概念我们尝试从概念上去理解一下闭包。在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。用比较容易懂的人话说，就">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title> | Leon Blog</title>
+  <title>python闭包和作用域 | Leon Blog</title>
   
 
 
@@ -311,7 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">python闭包和作用域</h1>
         
 
         <div class="post-meta">
@@ -361,8 +361,8 @@
       
 
       
-        <hr>
-<p>title: 测试python闭包函数<br>date: 2018-10-23 11:27:22<br>tags:<br>Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。<br>闭包的概念我们尝试从概念上去理解一下闭包。在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。<br><a id="more"></a><br>用比较容易懂的人话说，就是当某个函数被当成对象返回时，夹带了外部变量，就形成了一个闭包。看例子。<br>def make_printer(msg):<br>    def printer():<br>        print msg  # 夹带私货（外部变量）<br>    return printer  # 返回的是函数，带私货的函数</p>
+        <a id="more"></a>
+<p>Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。<br>闭包的概念我们尝试从概念上去理解一下闭包。在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。<br>用比较容易懂的人话说，就是当某个函数被当成对象返回时，夹带了外部变量，就形成了一个闭包。看例子。<br>def make_printer(msg):<br>    def printer():<br>        print msg  # 夹带私货（外部变量）<br>    return printer  # 返回的是函数，带私货的函数</p>
 <p>printer = make_printer(‘Foo!’)<br>printer()<br>支持将函数当成对象使用的编程语言，一般都支持闭包。比如Python, JavaScript。<br>如何理解闭包<br>闭包存在有什么意义呢？为什么需要闭包？<br>我个人认为，闭包存在的意义就是它夹带了外部变量（私货），如果它不夹带私货，它和普通的函数就没有任何区别。同一个的函数夹带了不同的私货，就实现了不同的功能。其实你也可以这么理解，闭包和面向接口编程的概念很像，可以把闭包理解成轻量级的接口封装。<br>接口定义了一套对方法签名的约束规则。<br>def tag(tag_name):<br>    def add_tag(content):<br>        return “&lt;{0}&gt;{1}&lt;/{0}&gt;”.format(tag_name, content)<br>    return add_tag</p>
 <p>content = ‘Hello’</p>
 <p>add_tag = tag(‘a’)<br>print add_tag(content)</p>
